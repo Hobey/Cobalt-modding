@@ -1,20 +1,19 @@
 
-ok
-here we go
+ok 
+here we go 
 
-modding tutorial #1
+modding tutorial #1 
 
-open Cobalt editor
+open Cobalt editor 
 open the mod editor (F9)
 
-if there nothing on the screen do
-file -> new (ctrl+n)
+if there nothing on the screen do 
+file -> new (ctrl+n) 
 
-type in something for name/description/author and select a type if you want
-set load_group to Modification - middle
+type in something for name/description/author and select a type if you want 
+set load_group to Modification - middle 
 
 > setting up the mod in the mod editor
-
 ![](https://i.imgur.com/AAVb3xM.jpg)
 
 file -> save   (ctrl+s)
