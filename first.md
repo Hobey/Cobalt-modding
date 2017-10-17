@@ -88,7 +88,7 @@ current modding api documetation (not up to date!)
 https://pastebin.com/d22p4fPz
 
 lua tutorial  
-https://learnxinyminutes.com/docs/lua/
+https://learnxinyminutes.com/docs/lua/  
 (you can ignore everything from "3.1 Metatables and metamethods",
 the current modding api doesn't include metatable stuff, io, loadfile etc.)
 
@@ -153,71 +153,40 @@ hook.add("modInit", init)
 ```
 adds that function to the modInit hook
 
-```lua
-hook
-```
-is a global table in the modding api
-
-```lua
-add
-```
-is a value (a function) in that table
-
-```lua
-"modInit"
-```
-is the name of the hook
-
-```lua
-init
-```
-is the function defined by the mod
+`hook` is a global table in the modding api  
+`add` is a value (a function) in that table  
+`modInit` is the name of the hook  
+`init` is the function defined by the mod
 
 ______________________________________________________
 
 these are the hooks i know of and what arguments they receive (as far as i know):
 
-```lua
-"frameUpdate"
-```
+`"frameUpdate"`
 time delta of current frame (~0.016 for 60 FPS)
 
-```lua
-"frameRender"
-```
+`"frameRender"`
 [nothing]
 
-```lua
-"mouseButton"
-```
+`"mouseButton"`
 mouse x  
 mouse y  
 mouse button (left = 0, right = 1, middle = 2, scroll-up = 10, scroll-down = 11)
 
-```lua
-"windowResized"
-```
+`"windowResized"`
 new window width  
 new window height
 
-```lua
-"modInit"
-```
+`"modInit"`
 [nothing]
 
-```lua
-"modClose"
-```
+`"modClose"`
 [nothing]
 
-```lua
-"keyPress"
-```
+`"keyPress"`
 keycode of pressed key
 
-```lua
-"keyCharacter"
-```
+`"keyCharacter"`
 keycode of pressed character
 
 ______________________________________________________
