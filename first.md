@@ -89,7 +89,7 @@ https://pastebin.com/d22p4fPz
 
 lua tutorial  
 https://learnxinyminutes.com/docs/lua/  
-(you can ignore everything from "3.1 Metatables and metamethods",
+(you can ignore everything from "3.1 Metatables and metamethods",  
 the current modding api doesn't include metatable stuff, io, loadfile etc.)
 
 ______________________________________________________
@@ -128,7 +128,7 @@ if you want to quickly iterate on modding without doing [cobalt editor -> mod ed
 `C:\Program Files (x86)\Steam\steamapps\workshop\content\357340\WORKSHOP_ID`   (Cobalt)  
 `C:\Program Files (x86)\Steam\steamapps\workshop\content\590720\WORKSHOP_ID`   (WASD)
 
-and then just copy the files from there into the documents\cobalt\mods_dev folder and upload the mod when you want to share it with other
+and then just copy the files from there into the documents\cobalt\mods_dev folder and upload the mod when you want to share it with others
 
 ______________________________________________________
 
