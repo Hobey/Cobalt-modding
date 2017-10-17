@@ -28,7 +28,7 @@ paste this (just some sample code that prints THIS IS SPARTA at startup):
 
 ```lua
 local function init ()
-     print("THIS IS SPARTA")
+    print("THIS IS SPARTA")
 end
 
 hook.add("modInit", init)
@@ -46,36 +46,36 @@ subscribe to the mod
 close the cobalt editor
 
 > selecting workshop
-![](https://imgur.com/wWATj12)
+![](https://i.imgur.com/wWATj12.jpg)
 
 > requesting workshop id
-![](https://imgur.com/usumrNX)
+![](https://i.imgur.com/usumrNX.jpg)
 
 > fetched workshop data, typed in a title, submitting workshop data
-![](https://imgur.com/Y9GaQWA)
+![](https://i.imgur.com/Y9GaQWA.jpg)
 
 > opening in overlay
-![](https://imgur.com/KzYe8hZ)
+![](https://i.imgur.com/KzYe8hZ.jpg)
 
 > subscribing
-![](https://imgur.com/OBKOTBK)
+![](https://i.imgur.com/OBKOTBK.jpg)
 
 > done with the cobalt editor
-![](https://imgur.com/LfPDxkC)
+![](https://i.imgur.com/LfPDxkC.jpg)
 
 open cobalt / cobalt WASD (for whichever workshop you uploaded the mod)
 
 goto options -> mods and toggle your mod on
 
 > activating the mod
-![](https://imgur.com/HFdncw9)
+![](https://i.imgur.com/HFdncw9.jpg)
 
 restart the game
 
 there should now be a white text THIS IS SPARTA in the bottom left of the screen
 
 > THIS IS SPARTA
-![](https://imgur.com/jeFErvq)
+![](https://i.imgur.com/jeFErvq.jpg)
 
 ##
 
@@ -273,16 +273,16 @@ for example:
 for the function renderCircle in the table video the docs only say
 ```lua
 video = {
-     -- ...
-     renderCircle()
-     -- ...
+    -- ...
+    renderCircle()
+    -- ...
 }
 ```
 
 i can try this
 ```lua
 local function render ()
-    video.renderCircle()
+   video.renderCircle()
 end
 
 hook.add("frameRender", render)
@@ -311,7 +311,7 @@ local_variables:
 ```
 corresponds to the line
 ```lua
-    video.renderCircle()
+   video.renderCircle()
 ```
 
 ```
@@ -329,8 +329,8 @@ what arguments the function should have gotten
 so now i change the code to
 ```lua
 local function render ()
-    --                 x,   y,   radius, alpha, r,   g,   b
-    video.renderCircle(100, 200, 50,     127,   255, 255, 127)
+   --                 x,   y,   radius, alpha, r,   g,   b
+   video.renderCircle(100, 200, 50,     127,   255, 255, 127)
 end
 
 hook.add("frameRender", render)
@@ -339,6 +339,8 @@ hook.add("frameRender", render)
 and i get this dirty yellow circle!
 
 >
-![](https://imgur.com/WuMwGg7)
+![](https://i.imgur.com/WuMwGg7.jpg)
+
+##
 
 images: https://imgur.com/a/CNuZX
