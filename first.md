@@ -198,7 +198,7 @@ https://pastebin.com/d22p4fPz
 https://github.com/Hobey/Cobalt-modding/blob/master/cobalt_mod_api.lua
 
 you can find an out-of-date list of all the global tables and functions in the modding api,  
-and the names of hooks, items, sounds, objects, actors and inventories and an example actor_class mod
+and the names of hooks, items, sounds, objects, actors and inventories and an example actor_class mod (for pre-beta cobalt)
 
 the lua standard library stuff that the current modding api includes:
 
