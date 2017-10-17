@@ -1,25 +1,25 @@
 
-ok
+ok  
 here we go
 
 # modding tutorial #1
 
 ______________________________________________________
 
-open Cobalt editor
+open Cobalt editor  
 open the mod editor (F9)
 
-if there nothing on the screen do
+if there nothing on the screen do  
 file -> new (ctrl+n)
 
-type in something for name/description/author and select a type if you want
+type in something for name/description/author and select a type if you want  
 set load_group to Modification - middle
 
-> setting up the mod in the mod editor
+> setting up the mod in the mod editor  
 ![](https://i.imgur.com/AAVb3xM.jpg)
 
-file -> save   (ctrl+s)
-choose a name for the folder with the mod files and hit save
+file -> save (ctrl+s)  
+choose a name for the folder with the mod files and hit save  
 go to the created folder (should be in C:\Users\USER_NAME\Documents\Cobalt\mods_dev\MOD_NAME)
 
 create a "init.lua" file in that folder and open it with the code editor of your choice (it's nice if it can do lua indentation and syntax highlighting)
@@ -34,13 +34,13 @@ end
 hook.add("modInit", init)
 ```
 
-save the file
+save the file  
 go back to the cobalt editor
 
-workshop (ctrl+w)
+workshop (ctrl+w)  
 upload to cobalt/cobalt wasd workshop just like you would upload a map (and i think it has to be public if you want to play it with someone)
 
-open in overlay
+open in overlay  
 subscribe to the mod
 
 close the cobalt editor
@@ -77,66 +77,65 @@ there should now be a white text THIS IS SPARTA in the bottom left of the screen
 > THIS IS SPARTA
 ![](https://i.imgur.com/jeFErvq.jpg)
 
-##
+______________________________________________________
 
 ### some links:
 
-pre-beta cobalt modding
+pre-beta cobalt modding  
 https://docs.google.com/document/d/1M90Lt0TVeBHJE1VTi-oVaFHplhid2eQek_YVohXNiiU
 
-current modding api documetation (not up to date!)
+current modding api documetation (not up to date!)  
 https://pastebin.com/d22p4fPz
 
-lua tutorial
+lua tutorial  
 https://learnxinyminutes.com/docs/lua/
 (you can ignore everything from "3.1 Metatables and metamethods",
 the current modding api doesn't include metatable stuff, io, loadfile etc.)
 
-###
+______________________________________________________
 
 if the game ever crashes because of your mod, you can find the crashlog here:
 
-C:\Users\USER_NAME\AppData\Roaming\Cobalt\logs
+C:\Users\USER_NAME\AppData\Roaming\Cobalt\logs  
 C:\Users\USER_NAME\AppData\Roaming\Cobalt WASD\logs
 
-###
+______________________________________________________
 
 if your mod is ever so broken that you can't disable through the in game options, you can disable your mod through this config file
 
 C:\Users\Familie\AppData\Roaming\Cobalt WASD\mods.sfg
 
-(in the line ["1234567890_your_mod_id"] = true
-change true to false)
+(in the line `["1234567890_your_mod_id"] = true` change `true` to `false`)
 
-###
+______________________________________________________
 
 if the game ever freezes in fullscreen mode and you are in windows 10 and you can't close the game (even with alt+F4) or even switch to another tab, try this crazy thing (works for me :D)
 
-press ctrl+shift+escape (or press ctrl+alt+delete and click "Task-Manager")
+press ctrl+shift+escape (or press ctrl+alt+delete and click "Task-Manager")  
 if you made the task manager the top-most window and it appears, close the game through task manager
 
-if it doesn't appear:
-press win+tab
-drag the frozen window into a new desktop (bottom right)
+if it doesn't appear:  
+press win+tab  
+drag the frozen window into a new desktop (bottom right)  
 now, you should be able to see other windows again and can close the game through task manager
 
 if that doesn't work, i don't even know, just restart your pc :/
 
-###
+______________________________________________________
 
 if you want to quickly iterate on modding without doing [cobalt editor -> mod editor -> workshop -> upload] every time you make a change to your code, you can edit the workshop files directly in:
 
-C:\Program Files (x86)\Steam\steamapps\workshop\content\357340\WORKSHOP_ID   (Cobalt)
+C:\Program Files (x86)\Steam\steamapps\workshop\content\357340\WORKSHOP_ID   (Cobalt)  
 C:\Program Files (x86)\Steam\steamapps\workshop\content\590720\WORKSHOP_ID   (WASD)
 
 and then just copy the files from there into the documents\cobalt\mods_dev folder and upload the mod when you want to share it with other
 
-##
+______________________________________________________
 
-now
-some basics on the modding itself
+### now  
+### some basics on the modding itself
 
-###
+______________________________________________________
 
 you define functions in your init.lua
 and add them to a hook into the game
@@ -174,7 +173,7 @@ init
 ```
 is the function defined by the mod
 
-###
+______________________________________________________
 
 these are the hooks i know of and what arguments they receive (as far as i know):
 
@@ -221,20 +220,18 @@ keycode of pressed key
 ```
 keycode of pressed character
 
-###
+______________________________________________________
 
-####
-
-in the link of the modding api i pasted above
+in the link of the modding api i pasted above  
 https://pastebin.com/d22p4fPz
 
-(this is the same file as in the pastebin)
-cobalt_mod_api.lua
+(this is the same file as in the pastebin)  
+cobalt_mod_api.lua  
 37.28 KB
 
 __TODO link the file in this repository?__
 
-you can find an out-of-date list of all the global tables and functions in the modding api
+you can find an out-of-date list of all the global tables and functions in the modding api  
 the lua standard library stuff that the current modding api includes:
 
 functions:
@@ -258,14 +255,14 @@ string
 table
 ```
 
-(the tables do not include all the stuff that the standard library tables include)
-for these you can look up what they do and how you can use them through googling
+(the tables do not include all the stuff that the standard library tables include)  
+for these you can look up what they do and how you can use them through googling  
 (you can also search for them in https://www.lua.org/manual/5.1/#index)
 
-####
+______________________________________________________
 
-for all other functions, if you want to know what arguments they take, you can either 
-look at the modding api docs or, if the docs don't include the function or if it doesn't show the arguments for the functions, 
+for all other functions, if you want to know what arguments they take, you can either  
+look at the modding api docs or, if the docs don't include the function or if it doesn't show the arguments for the functions,  
 just pass nothing and look at the local variables in the crash that happens
 
 for example:
@@ -317,7 +314,7 @@ corresponds to the line
 ```
   [1] cobalt/daisyMoon/lib/renderHelpers.lua:396: in function renderCircle
 ```
-corresponds to the line in the actual function renderCircle that crashed the game
+corresponds to the line in the actual function `renderCircle` that crashed the game
 
 we can see in
 ```
@@ -341,6 +338,6 @@ and i get this dirty yellow circle!
 >
 ![](https://i.imgur.com/WuMwGg7.jpg)
 
-##
+______________________________________________________
 
 images: https://imgur.com/a/CNuZX
