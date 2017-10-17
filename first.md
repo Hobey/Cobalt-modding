@@ -7,14 +7,13 @@ modding tutorial #1
 open Cobalt editor
 open the mod editor (F9)
 
-![asdf](https://github.com/Hobey/Cobalt-modding/blob/master/20171016031814_1.jpg)
-
 if there nothing on the screen do
 file -> new (ctrl+n)
 
 type in something for name/description/author and select a type if you want
 set load_group to Modification - middle
-[setting up the mod in the mod editor]
+__setting up the mod in the mod editor
+![](https://i.imgur.com/AAVb3xM.jpg)
 
 file -> save   (ctrl+s)
 choose a name for the folder with the mod files and hit save
