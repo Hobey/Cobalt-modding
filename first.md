@@ -4,7 +4,7 @@ here we go
 
 # modding tutorial #1
 
-##
+______________________________________________________
 
 open Cobalt editor
 open the mod editor (F9)
