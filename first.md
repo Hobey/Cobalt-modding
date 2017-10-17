@@ -261,9 +261,7 @@ for these you can look up what they do and how you can use them through googling
 
 ______________________________________________________
 
-for all other functions, if you want to know what arguments they take, you can either  
-look at the modding api docs or, if the docs don't include the function or if it doesn't show the arguments for the functions,  
-just pass nothing and look at the local variables in the crash that happens
+for all other functions, if you want to know what arguments they take, you can either look at the modding api docs or, if the docs don't include the function or if it doesn't show the arguments for the functions, just pass nothing and look at the local variables in the crash that happens
 
 for example:
 
