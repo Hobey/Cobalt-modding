@@ -194,11 +194,8 @@ ______________________________________________________
 in the link of the modding api i pasted above  
 https://pastebin.com/d22p4fPz
 
-(this is the same file as in the pastebin)  
-cobalt_mod_api.lua  
-37.28 KB
-
-__TODO link the file in this repository?__
+(also, here's the same file as in the pastebin)  
+https://github.com/Hobey/Cobalt-modding/blob/master/cobalt_mod_api.lua
 
 you can find an out-of-date list of all the global tables and functions in the modding api  
 the lua standard library stuff that the current modding api includes:
