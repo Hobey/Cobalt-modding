@@ -190,14 +190,14 @@ time delta of current frame (~0.016 for 60 FPS)
 ```lua
 "mouseButton"
 ```
-mouse x
-mouse y
+mouse x  
+mouse y  
 mouse button (left = 0, right = 1, middle = 2, scroll-up = 10, scroll-down = 11)
 
 ```lua
 "windowResized"
 ```
-new window width
+new window width  
 new window height
 
 ```lua
