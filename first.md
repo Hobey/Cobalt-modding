@@ -313,7 +313,7 @@ and i get this dirty yellow circle!
 >
 ![](https://i.imgur.com/WuMwGg7.jpg)
 
-note that not all local variables listed in the crash have to be arguments to the function, but if the function takes any arguments, they will be at the start of the local variables (also, if you ever see `arg`, that means the function takes varargs (any number of arguments at the end of the argument list))
+note that not all local variables listed in the crash have to be arguments to the function, but if the function takes any arguments, they will be at the start of the local variables (also, if you ever see `arg`, that means the function takes varargs (= any number of arguments at the end of the argument list))
 
 ______________________________________________________
 
