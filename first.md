@@ -20,7 +20,7 @@ set load_group to `Modification - middle`
 
 file -> save (ctrl+s)  
 choose a name for the folder with the mod files and hit save  
-go to the created folder (should be in C:\Users\USER_NAME\Documents\Cobalt\mods_dev\MOD_NAME)
+go to the created folder (should be in `C:\Users\USER_NAME\Documents\Cobalt\mods_dev\MOD_NAME`)
 
 create a "init.lua" file in that folder and open it with the code editor of your choice (it's nice if it can do lua indentation and syntax highlighting)
 
@@ -96,14 +96,14 @@ ______________________________________________________
 
 if the game ever crashes because of your mod, you can find the crashlog here:
 
-C:\Users\USER_NAME\AppData\Roaming\Cobalt\logs  
-C:\Users\USER_NAME\AppData\Roaming\Cobalt WASD\logs
+`C:\Users\USER_NAME\AppData\Roaming\Cobalt\logs`  
+`C:\Users\USER_NAME\AppData\Roaming\Cobalt WASD\logs`
 
 ______________________________________________________
 
 if your mod is ever so broken that you can't disable through the in game options, you can disable your mod through this config file
 
-C:\Users\Familie\AppData\Roaming\Cobalt WASD\mods.sfg
+`C:\Users\Familie\AppData\Roaming\Cobalt WASD\mods.sfg`
 
 (in the line `["1234567890_your_mod_id"] = true` change `true` to `false`)
 
@@ -125,8 +125,8 @@ ______________________________________________________
 
 if you want to quickly iterate on modding without doing [cobalt editor -> mod editor -> workshop -> upload] every time you make a change to your code, you can edit the workshop files directly in:
 
-C:\Program Files (x86)\Steam\steamapps\workshop\content\357340\WORKSHOP_ID   (Cobalt)  
-C:\Program Files (x86)\Steam\steamapps\workshop\content\590720\WORKSHOP_ID   (WASD)
+`C:\Program Files (x86)\Steam\steamapps\workshop\content\357340\WORKSHOP_ID`   (Cobalt)  
+`C:\Program Files (x86)\Steam\steamapps\workshop\content\590720\WORKSHOP_ID`   (WASD)
 
 and then just copy the files from there into the documents\cobalt\mods_dev folder and upload the mod when you want to share it with other
 
