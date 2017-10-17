@@ -174,8 +174,8 @@ mouse y
 mouse button (left = 0, right = 1, middle = 2, scroll-up = 10, scroll-down = 11)
 
 `"windowResized"`  
-new window width  
-new window height
+window width  
+window height
 
 `"modInit"`  
 [nothing]
