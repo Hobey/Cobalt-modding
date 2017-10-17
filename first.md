@@ -155,38 +155,38 @@ adds that function to the modInit hook
 
 `hook` is a global table in the modding api  
 `add` is a value (a function) in that table  
-`modInit` is the name of the hook  
+`"modInit"` is the name of the hook  
 `init` is the function defined by the mod
 
 ______________________________________________________
 
 these are the hooks i know of and what arguments they receive (as far as i know):
 
-`"frameUpdate"`
+`"frameUpdate"`  
 time delta of current frame (~0.016 for 60 FPS)
 
-`"frameRender"`
+`"frameRender"`  
 [nothing]
 
-`"mouseButton"`
+`"mouseButton"`  
 mouse x  
 mouse y  
 mouse button (left = 0, right = 1, middle = 2, scroll-up = 10, scroll-down = 11)
 
-`"windowResized"`
+`"windowResized"`  
 new window width  
 new window height
 
-`"modInit"`
+`"modInit"`  
 [nothing]
 
-`"modClose"`
+`"modClose"`  
 [nothing]
 
-`"keyPress"`
+`"keyPress"`  
 keycode of pressed key
 
-`"keyCharacter"`
+`"keyCharacter"`  
 keycode of pressed character
 
 ______________________________________________________
@@ -213,9 +213,11 @@ tonumber()
 tostring()
 type()
 unpack()
+assert()
+print()
 ```
 
-tables (mostly of more functions)
+tables (mostly of more functions):
 ```lua
 coroutine
 math
@@ -228,9 +230,16 @@ table
 for these you can look up what they do and how you can use them through googling  
 (you can also search for them in https://www.lua.org/manual/5.1/#index)
 
+small note:
+```lua
+assert()
+print()
+```
+work the same as the standard library functions with that name but they are actually custom functions from the game (like, `print` doesn't actually print to a console but directly to the game, and `assert` just prints everything from the second argument and after if the assertion fails (= when the first argument is `false` or `nil`)
+
 ______________________________________________________
 
-for all other functions, if you want to know what arguments they take, you can either look at the modding api docs or, if the docs don't include the function or if it doesn't show the arguments for the functions, just pass nothing and look at the local variables in the crash that happens
+for all other functions, if you want to know what arguments they take, you can either look at the modding api docs or, if the docs don't include the function or if they don't show the arguments for the functions, just pass nothing and look at the local variables in the crash that happens
 
 for example:
 
@@ -281,7 +290,7 @@ corresponds to the line
 ```
   [1] cobalt/daisyMoon/lib/renderHelpers.lua:396: in function renderCircle
 ```
-corresponds to the line in the actual function `renderCircle` that crashed the game
+corresponds to the line in the actual function `renderCircle` (which we don't have the source code for) that crashed the game
 
 we can see in
 ```
@@ -304,6 +313,8 @@ and i get this dirty yellow circle!
 
 >
 ![](https://i.imgur.com/WuMwGg7.jpg)
+
+note that not all local variables listed in the crash have to be arguments to the function, but if the function takes any arguments, they will be at the start of the local variables (also, if you ever see `arg`, that means the function takes varargs (any number of arguments))
 
 ______________________________________________________
 
