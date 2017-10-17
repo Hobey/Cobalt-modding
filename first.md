@@ -235,7 +235,7 @@ small note:
 assert()
 print()
 ```
-work the same as the standard library functions with that name but they are actually custom functions from the game (like, `print` doesn't actually print to a console but directly to the game, and `assert` just prints everything from the second argument and after if the assertion fails (= when the first argument is `false` or `nil`)
+work the same as the standard library functions with that name but they are actually custom functions from the game (like, `print` doesn't actually print to a console but directly to the game, and `assert` just prints everything from the second argument and after in redif the assertion fails (= when the first argument is `false` or `nil`))
 
 ______________________________________________________
 
@@ -318,4 +318,4 @@ note that not all local variables listed in the crash have to be arguments to th
 
 ______________________________________________________
 
-images: https://imgur.com/a/CNuZX
+imgur album of used images: https://imgur.com/a/CNuZX
