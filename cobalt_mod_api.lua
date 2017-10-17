@@ -1,0 +1,2302 @@
+coroutine = {
+	resume()
+	status()
+	wrap()
+	running()
+	create()
+}
+assert()
+
+fonts = {
+	alignY()
+	getHeight()
+}
+tostring()
+
+mode_prefix_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	get_variable(index, var)
+	set(index, settings)
+}
+
+movement_defs = {
+	get_variable(index, var)
+	set_variable(index, var, val)
+	get_indexes()
+	add_move(index, move)
+	remove_move(index, move)
+}
+
+actor_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	set_criticals(index, criticals)
+	get_variable(index, var)
+}
+
+guides = {
+	remove_guide_section(guide, section_index)
+	set_section(section_index, def)
+	add_guide_section(guide, section_index, at)
+	set_section_element(section_index, element_index, elem)
+	get_indexes()
+	get_guide_indexes(guide)
+	set_section_variable(section_index, var, val)
+	set_section_element_variable(section_index, element_index, var, val)
+}
+tonumber()
+
+tips = {
+	set_localized_ids(ids)
+}
+
+ai_defs = {
+	add_concept(ai_index, ai_concept)
+	get_indexes()
+}
+
+input_sets = {
+	add_overview_actions(set_index, actions, overview_category)
+	add_set_actions(set_index, actions)
+	remove_set_actions(set_index, actions)
+	get_indexes()
+	add_editable_actions(actions)
+}
+ipairs()
+
+global_settings = {
+	get(id)
+	set(id, value)
+}
+
+inventory_defs = {
+	set_variable(index, var, val)
+	add(index, inv)
+	get_variable(index, var)
+}
+print()
+
+tutorial_defs = {
+	add_action(index, action)
+	get_indexes()
+	set_actions(index, actions)
+}
+
+item_defs = {
+    get_variable(index, var)
+	set_aspect(index, aspect, val)
+	add_logic(index, logic_name)
+	set_variable(index, var, val)
+	get_indexes()
+	has_variable(index, var)
+	set_logic(index, logics)
+}
+pcall()
+
+preference_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	get_variable(index, var)
+	set(index, settings)
+}
+type()
+
+object_defs = {
+	get_variable(index, var)
+	set_aspect(index, aspect, val)
+	add_logic(index, logic_name)
+	set_variable(index, var, val)
+	get_indexes()
+}
+
+explosion_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	get_variable(index, var)
+}
+
+game_modes = {
+	get_variable(game_mode, var)
+	add_logic(game_mode, logic)
+	set_phases(game_mode, phases)
+	remove_logic(game_mode, logic)
+	get_indexes()
+	get_states_indexes()
+	remove_state(game_mode, state)
+	set_logic(game_mode, logics)
+	get_phases(game_mode)
+	add_setting(game_mode, list, setting)
+	has_state(game_mode, state)
+	get_logic(game_mode)
+	get_states(game_mode)
+	remove_setting(game_mode, list, setting)
+	get_logic_indexes()
+	set_states(game_mode, states)
+	add_state(game_mode, state)
+	set_variable(game_mode, var, val)
+	has_variable(game_mode, var)
+}
+
+main_menu = {
+	remove_state(state_index)
+	set_phases(phases)
+	set_states(states)
+	add_state(state_index)
+	define_state(state_index, state_def)
+	set_illustrations(illustrations)
+}
+
+config = {
+	save(id, data_table)
+	load(id)
+}
+
+control_presets = {
+	get_indexes(device)
+	set_default(device, id, preset)
+	remove(device, id)
+	set(device, id, preset)
+}
+
+actor_classes = {
+	replace_item(name, to_replace, with_item)
+	add(name, data)
+	get_indexes()
+	remove_item(name, to_remove)
+}
+
+fx_defs = {
+	set_variable(index, var, val)
+	has_variable(index, var)
+	get_indexes()
+	get_variable(index, var)
+}
+
+offer_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	get_variable(index, var)
+}
+pairs()
+
+aspect_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	get_variable(index, var)
+}
+
+item_slots = {
+	set_variable(slot_index, var, val)
+	add(slot_index, def)
+	get_indexes()
+	get_variable(slot_index, var)
+}
+
+table = {
+	maxn()
+	remove()
+	remove_value()
+	sort()
+	concat()
+	insert()
+}
+
+attack_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	get_variable(index, var)
+}
+
+seat_defs = {
+	set_variable(index, var, val)
+	get_indexes()
+	get_variable(index, var)
+}
+
+profile_defs = {
+	set_tintable_actors(actor_indexes)
+	remove_tintable_actor(actor_index)
+	add_tintable_actor(actor_index)
+}
+print_clear()
+
+colors = {
+	get_indexes()
+	set(index, val)
+	get(index)
+}
+
+composite_defs = {
+	replace_tint_material(composite_index, to_find, replace_with)
+}
+
+canvas = {
+	.factor (number)
+}
+
+sprite_defs = {
+	require_defs(booker, defs)
+	register_defs(defs, optional_default_dat)
+	release_all(booker)
+	release_defs(booker, defs)
+}
+
+tint_defs = {
+	set_tints(material_index, tints)
+	set(material_index, mat_def)
+}
+
+dash_action_sets = {
+	add_action(index, action)
+	get_indexes()
+	set_actions(index, actions)
+}
+
+dash_actions = {
+	get_variable(index, var)
+	set_input(index, val)
+	get_indexes()
+}
+
+official_resources = {
+	set_arcade_game_modes(modes)
+	set_online_game_modes(modes)
+}
+
+camera_modes = {
+	get_indexes()
+	get_preset_variable(index, preset, var)
+	set_preset_variable(index, preset, var, val)
+	get_presets(index)
+}
+next()
+
+math = {
+	ceil()
+	tan()
+	bounceBlink()
+	sinh()
+	distance2()
+	getMaxSeed()
+	distance()
+	.huge (number)
+	getOffsetPosition2dScaled()
+	min()
+	fmod()
+	difference()
+	rad()
+	getNodeIKAngles()
+	log()
+	randomRange()
+	sCurve()
+	quantifyFloor()
+	captureBlink()
+	randomAngle()
+	atan()
+	crossFade()
+	acos()
+	bounce()
+	easeBounce()
+	easeOut()
+	direction4ToAngle()
+	ease_out_pow()
+	heartPulse()
+	log10()
+	sign()
+	subtleBlink()
+	.pi (number)
+	round()
+	approach()
+	random()
+	snap()
+	seededRandomNumber()
+	length2()
+	normalize()
+	quantifyCeil()
+	angleBetweenPoints()
+	clamp()
+	atan2()
+	isnan()
+	cosh()
+	angleDifferenceAbs()
+	cropLine()
+	randomseed()
+	reverseCoordinates()
+	ldexp()
+	lineIntersects()
+	resolveRecursive()
+	average()
+	randomGaussian()
+	sqrt()
+	resolve()
+	sin()
+	lerp()
+	asin()
+	seededRandomGaussian()
+	angleDifference()
+	cos()
+	getProximity()
+	deg()
+	pow()
+	positionAlongEdge()
+	length()
+	exp()
+	floor()
+	quantify()
+	max()
+	normalizeAngle()
+	approachAngle()
+	safeRandom()
+	getOffsetPosition()
+	abs()
+	triangleWave()
+	tanh()
+	frexp()
+	initRandom()
+	selectionFluct()
+	easedBlink()
+	modf()
+	pinch()
+	approachPosition()
+	heartPhase()
+}
+
+ai_concept_defs = {
+	get_indexes()
+	remove_hook(index, var)
+}
+
+os = {
+	difftime()
+	time()
+	clock()
+}
+unpack()
+
+string = {
+	find()
+	upper()
+	rep()
+	sub()
+	len()
+	match()
+	dump()
+	gmatch()
+	reverse()
+	byte()
+	char()
+	lower()
+	format()
+	gsub()
+}
+
+sound = {
+	playSound()
+}
+
+hook = {
+	remove(id, func)
+	add(id, func)
+}
+
+video = {
+	renderAngledQuadSprite()
+	renderHudSpriteState()
+	renderBlockedCounter()
+	renderGradientRight()
+	getSpriteCorners()
+	renderLinePlus()
+	renderStretchedQuadSprite()
+	renderConnectionLinesRotated()
+	renderConnectionLines()
+	renderBubbleProcessTextSprites()
+	renderShape()
+	renderSpriteLinePlus()
+	renderAdvancedText()
+	renderSpriteRectangleLine()
+	renderSpriteCircleLine()
+	renderShadowedTextTimer()
+	renderTableRecursive()
+	renderPlus()
+	renderRectangle()
+	renderAngledBeamSprite()
+	renderShadowedSpriteState()
+	renderTileReflection()
+	renderShadowedAdvancedText()
+	renderGradientDown()
+	renderSpriteCircleSmoothLine()
+	renderScaledSpriteState()
+	renderBubbleProgressTextSprites()
+	renderCircleSprite()
+	renderSpriteState()
+	renderGradientUp()
+	renderArcFadedLineSprite()
+	renderFormattedText()
+	renderSpriteRectangleOutline()
+	renderCircleProgressBar()
+	getProgressBarBounds()
+	renderBubbleAdvancedText()
+	renderCircleNotches()
+	renderScalingProgressBar()
+	getTableRecursiveBounds()
+	renderAlignedProgressBar()
+	renderProgressBar()
+	renderAlignedMaxedProgressBar()
+	renderFreeSpriteRectangle()
+	renderCachableShadowedTextSprites()
+	renderFrameSprite()
+	renderCachableTextSprites()
+	renderRectangleOutline()
+	renderLineWithOutline()
+	renderGradientLeft()
+	renderSpriteLineArrow()
+	renderSpriteRectangleLineAt()
+	renderLoading()
+	getTextScaleFit()
+	renderBubbleTextSprites()
+	renderTextTimer()
+	renderAdditiveScaledSpriteState()
+	renderRotatedShape()
+	getTextSpritesSize()
+	renderCircleProcess()
+	getTextTimerSize()
+	renderAdditiveSpriteStateFreeShape()
+	renderBubbleProgressBarSprites()
+	renderCrystal()
+	renderCenteredProgressBarNotch()
+	renderSpriteLine()
+	renderBelt()
+	renderLineArrow()
+	renderLineGrid()
+	renderGradientBox()
+	renderArcLineSprite()
+	renderBeamSprite()
+	renderControllerFullIdentity()
+	renderSpriteRectangle()
+	renderSpriteBox()
+	renderProgressBarNotch()
+	renderSpriteLineShaped()
+	renderPreparedTileSteps()
+	renderProgressBox()
+	renderAdditiveSpriteState()
+	getTextSpriteBounds()
+	renderPingBar()
+	renderCircleArcSprite()
+	renderSpriteBoxOutline()
+	renderAngledSpriteLine()
+	getSpriteStateSize()
+	getTableBounds()
+	renderAlignedProgressBarNotch()
+	renderRawAdditiveSpriteState()
+	renderScaledRectangleSprite()
+	renderLineBox()
+	renderCircle()
+	renderCenteredProgressBar()
+	renderSpriteLineWithOutline()
+}
+
+emotes = {
+	set_root_actions()
+	set_choice_actions()
+}
+
+HOOKS:
+  frameRender
+  frameUpdate
+  joystickButtonPressed
+  joystickButtonReleased
+  keyCharacter
+  keyPress
+  modClose
+  modInit
+  mouseButton
+  windowResized
+
+
+ITEMS:
+  amanitaBorealisHelmet
+  amanitaBorealisMask
+  amanitaCamoHelmet
+  amanitaDesertClothFace
+  amanitaDesertClothHat
+  amanitaEmpireHelmet
+  amanitaEmpireMask
+  amanitaHarness
+  amanitaScienceHat
+  amanitaScienceMask
+  ammoLarge
+  ammoLargeDouble
+  ammoMedium
+  ammoMediumDouble
+  ammoSmall
+  ammoSmallDouble
+  artifact
+  artifactApple
+  artifactCandlestick
+  artifactDisc
+  artifactKing
+  artifactNes
+  artifactVirtualBoy
+  backShell
+  barbedClub
+  barbedShield
+  basicShield
+  beamAmmo
+  beamGun
+  beamGunChargeCell
+  beamGunExtendedMagazine
+  beamGunPowerCrystal
+  birdEgg
+  bite
+  blasterAmmo
+  blasterGun
+  blasterGunEnergyDish
+  blasterGunMagazine
+  boltIron
+  boneClub
+  boomHelmet
+  boomerang
+  borealisShield
+  bounty
+  brain
+  brainRevive
+  capacitorBig
+  capacitorSmall
+  catBandana
+  catGlasses
+  catHunterHat
+  catRimmedHat
+  catSteelGuard
+  catSteelHat
+  chemicalShooter
+  chronoAmmo
+  chronoBomb
+  chronoRod
+  chronoShifter
+  chronoShifterMagazine
+  chronoShifterPower
+  chronoShifterScope
+  circuitBig
+  circuitSmall
+  cpuRegina2000
+  cpuRegina4000
+  crate
+  crateConsumable
+  crateUpgrade
+  crateUpgradeHull
+  crowbar
+  cyborgChronoFeetHull
+  cyborgChronoHandsHull
+  cyborgChronoHeadHull
+  cyborgChronoTorsoHull
+  cyborgDefenderFeetHull
+  cyborgDefenderHandsHull
+  cyborgDefenderHeadHull
+  cyborgDefenderTorsoHull
+  cyborgExplorerFeetHull
+  cyborgExplorerHandsHull
+  cyborgExplorerHeadHull
+  cyborgExplorerTorsoHull
+  cyborgScouterFeetHull
+  cyborgScouterHandsHull
+  cyborgScouterHeadHull
+  cyborgScouterTorsoHull
+  cyborgStealthFeetHull
+  cyborgStealthHandsHull
+  cyborgStealthHeadHull
+  cyborgStealthTorsoHull
+  dagger
+  dataCanister
+  distressBeacon
+  distressBeaconPrime
+  dynamite
+  dynamiteBackpack
+  egg2Big
+  egg2Small
+  eggBig
+  eggSmall
+  energy
+  energyBaton
+  energyShield
+  energyX10
+  energyX100
+  energyX1000
+  energyX50
+  energyX500
+  energyX5000
+  fanBig
+  fanSmall
+  fightingStick
+  flashbang
+  flyHardShellExoHull
+  forceDevice
+  freshMeat
+  goldBig
+  goldSmall
+  grab
+  grenadeAmmo
+  grenadeGun
+  grenadeGunMagazine
+  grenadeGunProximityFuse
+  groundAttachment
+  gyrojetAmmo
+  gyrojetGun
+  gyrojetGunExtendedBarrel
+  gyrojetGunMagazine
+  hackDestruct
+  hackDevice
+  hackGrenade
+  halbered
+  hammer
+  hardShield
+  helmet
+  helmetLow1
+  helmetLow2
+  helmetLow3
+  helmetLow5
+  homingLauncher
+  homingLauncherHomingDevice
+  homingLauncherMagazine
+  humanBorealisHelmet
+  humanBorealisMask
+  humanCamoHelmet
+  humanDesertClothFace
+  humanDesertClothHat
+  humanEmpireHelmet
+  humanEmpireMask
+  humanGlasses
+  humanGlovesArmy
+  humanGoggles
+  humanHarness
+  humanPantsCamo
+  humanPantsPlain
+  humanPantsSuit
+  humanPilots
+  humanRimmedHat
+  humanScienceHat
+  humanScienceMask
+  humanShirtCamo
+  humanShirtCoat
+  humanShirtPlain
+  humanShirtSash
+  humanShirtSuit
+  humanShoesArmy
+  humanShoesBoots
+  humanShoesDude
+  humanShoesFlops
+  humanShoesHeels
+  humanShoesLeather
+  implantChrono
+  implantChronoAlternator
+  implantChronoBoost
+  implantCloak
+  implantCrate
+  implantDeflect
+  implantHarden
+  implantShield
+  implantStun
+  inductorBig
+  inductorSmall
+  jadeBig
+  jadeSmall
+  jetEngine
+  jetFuel
+  jetShoes
+  joltSpider
+  klonk
+  launcherMini
+  launcherMiniHomingDevice
+  launcherMiniMagazine
+  launcherRocket
+  launcherRocketMagazine
+  launcherRocketScope
+  launcherShrapnel
+  launcherShrapnelMagazine
+  launcherShrapnelProximity
+  launcherThermal
+  launcherThermalHomingDevice
+  leafBig
+  leafSmall
+  lightEnhancer
+  liveEgg
+  logicChipBig
+  logicChipSmall
+  machete
+  mallet
+  materializerGun
+  matterAmmo
+  matterBlaster
+  matterBlasterScope
+  matterBolt
+  matterBoltMagazine
+  matterBoltScope
+  matterBoltSilencer
+  matterCannon
+  matterCannonSupport
+  matterGun
+  matterGunMagazine
+  matterGunPointer
+  matterGunScope
+  matterGunSilencer
+  matterMachine
+  matterMachineMagazine
+  matterMachinePointer
+  matterMachineScope
+  matterPistol
+  matterPistolBarrelMod
+  matterRifle
+  matterRifleMagazine
+  matterRiflePointer
+  matterRifleScope
+  matterWar
+  matterWarBarrel
+  matterWarMagazine
+  matterWarScope
+  matterWarSupport
+  megaBomb
+  megaBombExtendedTimer
+  memoryChipBig
+  memoryChipSmall
+  metalRod
+  metalShield
+  missileAmmo
+  molotov
+  moveChrono
+  moveCloak
+  moveDash
+  moveDeflect
+  moveHarden
+  moveReflect
+  moveStun
+  mushroom2Big
+  mushroom2Small
+  mushroomBig
+  mushroomSmall
+  mycelishroom
+  nanoAmmo
+  nanoDispenser
+  nanoPump
+  nanoPumpBarrel
+  nanoPumpMagazine
+  nest
+  nitrogenGrenade
+  nut
+  opalBig
+  opalSmall
+  paddle
+  peck
+  phaserGun
+  phaserGunRange
+  phaserGunSuperCharger
+  pickaxe
+  pitchfork
+  plantClub
+  plasmaAccelerator
+  plasmaAcceleratorBooster
+  plasmaAcceleratorScope
+  plasmaAmmo
+  plasmaAssault
+  plasmaAssaultBooster
+  plasmaAssaultScope
+  plasmaCannon
+  plasmaCannonBooster
+  plasmaCannonCooler
+  plasmaCannonSpinner
+  plasmaGun
+  plasmaGunBooster
+  plasmaGunCooler
+  plasmaGunSpinner
+  plasmaPistol
+  plasmaPistolBooster
+  plasmaPistolSpinner
+  plasmaStriker
+  plasmaStrikerBooster
+  plasmaStrikerCooler
+  plateLow1
+  plateLow3
+  plateLow5
+  poolQue
+  portableBouncer
+  portableSentry
+  powerSlice
+  prism
+  prismConverter
+  punch
+  radio
+  railAmmo
+  railBurst
+  railBurstBig
+  railBurstBigExtendedMagazine
+  railBurstBigWheel
+  railBurstExtendedMagazine
+  railBurstWheel
+  railCannon
+  railCannonPointer
+  railCannonScope
+  railGun
+  railGunPointer
+  railGunScope
+  railPrototype
+  railRevolver
+  railRevolverEngine
+  railRevolverLoadPin
+  railRifle
+  railRifleEngine
+  railRifleLoadPin
+  railScout
+  railScoutPointer
+  railScoutScope
+  railVanquisher
+  railVanquisherEngine
+  railVanquisherExtendedMagazine
+  rapier
+  reactionEnhancer
+  reactorAdvanced
+  reactorBasic
+  reflectShield
+  respawnCell
+  rock
+  rubyBig
+  rubySmall
+  sai
+  sapphireBig
+  sapphireSmall
+  sawbladeBat
+  scimitar
+  scrapShield
+  selfDestruct
+  sentryBackpack
+  sentryCamo
+  sentryFlower
+  sentrySkull
+  sentrySlime
+  sentryStripe
+  sentryTiger
+  servoBig
+  servoSmall
+  sgGuardLaser
+  sgHeroLaser
+  shell
+  shieldBattery
+  shieldBelt
+  shieldBeltCapacity
+  shieldDurability
+  shieldEffect
+  shovel
+  slothGrip
+  sluggerAmmo
+  sluggerGun
+  sluggerGunMagazine
+  sluggerPipe
+  sluggerPipeReinforcedBarrel
+  sluggerPipeScope
+  sluggerRevolver
+  sluggerRevolverExtendedBarrel
+  sluggerRevolverLoadPin
+  sluggerRevolverScope
+  sluggerSemi
+  sluggerSemiMagazine
+  sluggerSemiSilencer
+  sluggerShotgun
+  sluggerShotgunBarrel
+  sluggerShotgunTrigger
+  sluggerSub
+  sluggerSubMagazine
+  sluggerSubSilencer
+  spear
+  sphereGrenade
+  spike
+  spikeAmmo
+  spikeBowRepeater
+  spikeBowScope
+  spikeCrossbow
+  spikeShooter
+  spikebirdClub
+  spikedBat
+  spikedMine
+  stick
+  stunShield
+  superPlug
+  throwGrenade
+  transistorBig
+  transistorSmall
+  triPlug
+  vial
+  vialRad
+  vikingSword
+  waspHardShellExoHull
+  woodenBat
+  woodenPaddle
+  woodenShield
+  wrench
+
+
+SOUNDS:
+  AlienDeath
+  BtnDenial
+  LightTube
+  activate
+  activateComplete
+  aiOn
+  alarm2
+  amanitaAngry
+  amanitaConfused
+  amanitaDeath
+  amanitaExhausted
+  amanitaHurt
+  amanitaImpressed
+  amanitaLaugh
+  amanitaSing
+  amanitaSleep
+  amanitaTalk
+  amanitaTaunt
+  ammoLarge
+  ammoMedium
+  ammoSmall
+  announce_balance_teams
+  announce_blue_team_wins
+  announce_bomb_detonated
+  announce_bomb_disarmed
+  announce_bomb_dropped
+  announce_bomb_planted
+  announce_bomb_secured
+  announce_boom_boom
+  announce_combo_kill
+  announce_combo_revive
+  announce_draw
+  announce_final_round
+  announce_halftime
+  announce_hampster_dancing
+  announce_jetbike_deployed
+  announce_match_point
+  announce_match_starting
+  announce_metalfaces_win
+  announce_overtime
+  announce_predator_arrived
+  announce_protobots_win
+  announce_red_team_wins
+  announce_select_team
+  announce_site_defended
+  announce_slaughter
+  announce_spikeback_back
+  announce_sudden_death
+  announce_switching_teams
+  announce_walker_activated
+  announce_wasd_wasp
+  announce_you_have_bomb
+  backpackBeep
+  bad1
+  batonClash
+  batonHit
+  batonOff
+  batonOn
+  batteryPickup
+  beamCharge
+  beamLoop
+  beamReady
+  beeAttack
+  beeDeath
+  beeHit
+  bench
+  bigGrenadeBoom
+  bird
+  birdAttack
+  birdBreathe
+  birdDie
+  birdFlap
+  birdSing
+  birdSpeak
+  birdThrowEnd
+  birdThrowStart
+  blasterDie
+  blasterHit
+  blasterShot
+  blasterTrigger
+  bluefaceAngry
+  bluefaceBlink
+  bluefaceConfused
+  bluefaceHappy
+  bluefaceImpressed
+  bluefaceSing
+  bluefaceSmack
+  bluefaceSmackEnd
+  bluefaceSmackStart
+  bluefaceTalk
+  bluefaceThrowEnd
+  bluefaceThrowStart
+  bonus1
+  bonus2
+  bonus3
+  bonus4
+  bonus5
+  bonus6
+  borealisHit
+  botDamaged
+  botDelayedUse
+  botHit
+  botRecover
+  botSpark
+  botThrowEnd
+  botThrowStart
+  bounceArtifact
+  bounceBrain
+  bounceCrystal
+  bounceCrystalBig
+  bounceEgg
+  bounceEggBig
+  bounceGold
+  bounceGoldBig
+  bounceJade
+  bounceJadeBig
+  bounceLeaf
+  bounceLeafBig
+  bounceMetal
+  bounceMushroom
+  bounceMushroomBig
+  bounceShell
+  brainEngine
+  breakFinal
+  breakFinal1
+  breakHit
+  bulletBounce
+  bulletHit
+  burner
+  burnerEnd
+  bush
+  buttonLever
+  buttonStand
+  buttonStandUp
+  cameraSpotted
+  capture
+  captureFail
+  captureTake
+  catAttack
+  catDeath
+  catHit
+  catPur
+  cheer
+  cheerSorry
+  cheerYeah
+  chemical
+  chemicalShot
+  chip
+  chrono
+  chronoAlternator
+  chronoBlip
+  chronoBomb
+  chronoBombBeep
+  chronoBoostOff
+  chronoBoostOn
+  chronoHit
+  chronoOff
+  chronoOn
+  chronoShifterBomb
+  chronoShot
+  cloakOff
+  cloakOn
+  combo1
+  combo2
+  combo3
+  combo4
+  combo5
+  comboCounter
+  comboDeflected
+  comboEndStep
+  comboPhysical
+  comboRedirected
+  comboSneak
+  comboSurprised
+  confetti
+  confettiSmall
+  continue
+  converter
+  converterDone
+  conveyour
+  core
+  cpuEvil
+  cpuEvilSmall
+  customSound
+  dash
+  dashCancel
+  dashCancel_lithium
+  dashConfirm
+  dashConfirm_lithium
+  dashIn
+  dashIn_lithium
+  dashOut
+  dashOut_lithium
+  dashSelect
+  dashSelect_lithium
+  dashStop
+  dashStop_lithium
+  dbAdded
+  deedChanged
+  deedDone
+  deedProgress
+  deflectDischarge
+  despawn
+  destinationAdded
+  destroyConvertable
+  destroyGeneric
+  destroyWeapon
+  detectionAlarm
+  digiLock1
+  digiLock2
+  digiLock3
+  digiLockEntry
+  digiLockError
+  digiLockLockdown
+  digiLockReset
+  digiLockSelect
+  disarm
+  distressBeep
+  doorClose
+  doorLightClose
+  doorLightOpen
+  doorLocked
+  doorOpen
+  doorPoweredClose
+  doorPoweredLoop
+  doorPoweredOpen
+  doorSlideClose
+  doorSlideOpen
+  doorSpace2Close
+  doorSpace2Open
+  doorSpaceClose
+  doorSpaceOpen
+  doorWoodClose
+  doorWoodOpen
+  doubleJump
+  dragon_balance_teams
+  dragon_blue_team_wins
+  dragon_bomb_detonated
+  dragon_bomb_disarmed
+  dragon_bomb_dropped
+  dragon_bomb_planted
+  dragon_bomb_secured
+  dragon_boom_boom
+  dragon_combo_kill
+  dragon_combo_revive
+  dragon_draw
+  dragon_final_round
+  dragon_halftime
+  dragon_hampster_dancing
+  dragon_jetbike_deployed
+  dragon_match_point
+  dragon_match_starting
+  dragon_metalfaces_win
+  dragon_overtime
+  dragon_predator_arrived
+  dragon_protobots_win
+  dragon_red_team_wins
+  dragon_select_team
+  dragon_site_defended
+  dragon_slaughter
+  dragon_spikeback_back
+  dragon_sudden_death
+  dragon_switching_teams
+  dragon_walker_activated
+  dragon_wasd_wasp
+  dragon_you_have_bomb
+  drip
+  eggGrowth
+  eggHatch
+  elevator
+  elevatorButton
+  elevatorMusic
+  elevator_2
+  emptyChamber
+  energyPickup
+  engineLoop
+  expandPlug
+  fan
+  fire
+  fireCrack
+  fishAttack
+  fishDeath
+  fizzle
+  fizzleSpark
+  flame
+  flashbang
+  flashbangBeep
+  flashbeep5
+  forceEffect
+  funk
+  furnace
+  gamma
+  gammaHit
+  gas
+  gasDestroy
+  gasJump
+  generator
+  glassBreakBig
+  glassBreakSmall
+  good1
+  grass
+  grenadeArm
+  grenadeBeep
+  grenadeBoom
+  grenadeBoom2
+  guardBotDie
+  guardBotDieHs
+  guardConfirm
+  guardLost
+  guardSpot
+  guardStepAside
+  guardTalk1
+  guardTalk2
+  guardTalk3
+  gunBreak
+  gyroFlame
+  gyrojetLaunch
+  hackDestructBeep
+  hackDevice
+  hackDeviceDisconnect
+  hackDeviceFail
+  hackGrenade
+  hackGrenadeBeep
+  hackSpawned
+  hacked
+  hackedBeep
+  hackedBeepLong
+  hackingAlarm
+  hackingFailed
+  hackingStart
+  hackingSuccess
+  hamsterAttack
+  hamsterOuch
+  handShieldDestroy
+  handShieldHit
+  hardFizzle
+  heal
+  heatDie
+  heavyPunch
+  heavyPunchCharge
+  helmetHit
+  hitDirt
+  hitFeedback
+  hitIce
+  hitIndoorSoft
+  hitIndoors
+  hitMetal
+  hitMetalDark
+  hitMetalHeavy
+  hitMetalLight
+  hitSand
+  hitSnow
+  hitStone
+  hitStoneDark
+  hitWood
+  hitWoodHard
+  hitWoodHollow
+  hitWoodHollowLight
+  humanAngry
+  humanConfused
+  humanDeath
+  humanExhausted
+  humanHurt
+  humanImpressed
+  humanLaugh
+  humanSing
+  humanSleep
+  humanTalk
+  humanTaunt
+  illusion
+  jetBulletDie
+  jetEnd
+  jetLoop
+  jetStart
+  jump
+  klonk
+  klonkBeep
+  klonkDischarge
+  laserShot
+  laserShotDie
+  laserShotDie_lithium
+  laserShotHit
+  laserShotHit_lithium
+  laserShot_mod
+  lastStand
+  lava
+  lavaBall
+  lavaBallDie
+  lightOff
+  lightOn
+  lightOn2
+  lithiumPowerOn
+  loadout_tab
+  lockHacked
+  lockTick
+  lockTick2
+  lockTickOpen
+  lockTickReset
+  locked
+  logAdded
+  lounge
+  lounge_talk
+  machineAccepted
+  machineBooked
+  machineCancel
+  machineConvert
+  machineDenied
+  machineExitStart
+  machineSelection
+  machineStart
+  machineStop
+  mainframe_beep
+  mainframe_scan_end
+  mainframe_scan_loop
+  mainframe_scan_start
+  matterBlasterShoot
+  matterBlasterShoot_mod
+  matterBoltShoot
+  matterBoltShoot_mod
+  matterCannonShoot
+  matterCannonShoot_mod
+  matterMachineShoot
+  matterMachineShoot_mod
+  matterPistolShoot
+  matterPistolShoot_mod
+  matterRifleShoot
+  matterRifleShoot_mod
+  matterWarShoot
+  matterWarShoot_mod
+  megaBombBeep
+  memoryDrone
+  memoryDrone2
+  memoryHeartBeat1
+  memoryHeartBeat2
+  memoryMoveStart
+  memoryMoveStop
+  memoryPointing
+  memoryPointingOver
+  memoryPointingStart
+  memoryPulseEnd
+  memoryPulseStart
+  metalfaceDie
+  metalfaceDieHs
+  metalfaceDieRag
+  mineBeep
+  minimal
+  minimal_talk
+  missileFlame
+  missileFlameMini
+  missileFlameRocket
+  missileFlameThermal
+  missileLaunch
+  missileLaunchMini
+  missileLaunchRocket
+  missileLaunchThermal
+  missileStart
+  missileStartMini
+  missileStartRocket
+  missileStartThermal
+  molotov
+  molotovFire
+  molotovHit
+  moss
+  move
+  muffledExplosion1
+  multiplier1
+  multiplier2
+  multiplier3
+  nanoDispenserBeep
+  news_talk
+  news_to_report
+  ninjaDie
+  ninjaPunch
+  ninjaPunchHit
+  ninjaTalk1
+  ninjaTalk2
+  ninjaTalk3
+  ninjaThrowEnd
+  ninjaThrowStart
+  ninjaattack
+  nitrogenBeep
+  nitrogenBoom
+  objectDamaged
+  oil
+  oxeye
+  pad
+  phaserChargeHit
+  phaserHit
+  phaserShot
+  pickup
+  pickupAmmo
+  pickupRespawn
+  pickupWeapon
+  pinata
+  placeBuilding
+  plant
+  plantSmall
+  plasma
+  plasmaAcceleratorShot
+  plasmaAssaultShot
+  plasmaCannonShot
+  plasmaDie
+  plasmaDone
+  plasmaGunShot
+  plasmaHit
+  plasmaLoad
+  plasmaPistolShot
+  plasmaShot
+  plasmaStrikerShot
+  platform
+  platformOff
+  platformOn
+  portalOpening
+  powerDie
+  powerOff
+  powerOffFast
+  powerOn
+  powerOnFast
+  predatorDie
+  predatorJump
+  predatorLand
+  predatorOn
+  predatorStep
+  processCrude
+  processEnd
+  processEvil
+  processTiny
+  protectionHit
+  proximity
+  pulley
+  punch
+  punchCharge
+  punchHit
+  punchShroom
+  radioOff
+  radioOn
+  radio_effects
+  radio_hack_loop
+  radiochatter
+  raidCounter
+  railBurst
+  railBurstBig
+  railCannon
+  railPower
+  railPrototype
+  railRevolver
+  railRifle
+  railScout
+  railShot
+  railVanquisher
+  rain
+  reactorDamage
+  reactorFull
+  reactorLow
+  redHum
+  reflect
+  refuel
+  reloadBoost
+  reloadCrank
+  reloadEnd
+  reloadHandle
+  reloadInsert
+  reloadMag
+  reloadPrepare
+  repair
+  repairGas
+  repaired
+  report_talk
+  report_to_news
+  respawnCell
+  respawnCell2
+  returnPlug
+  rfidLockEntry
+  rfidLockReset
+  rfidcarrier
+  rigExplode
+  rigSpark
+  rockHit
+  routeCheck
+  routeGoal
+  routeStart
+  safeClose
+  safeOpen
+  sawBlade
+  scanned
+  scoreLand
+  scoreVoiceAverage
+  scoreVoiceBad
+  scoreVoiceGood
+  scoreVoiceRecord
+  secretFound
+  seed_engine_loop
+  seed_hum
+  selfDestructBeep
+  send
+  sendEnd
+  sendStep
+  sendTiny
+  sentryAttack
+  sentryBackpack
+  sentryLowAttack
+  sentryLowDie
+  sentryLowSpring
+  sentryLowThrowEnd
+  sentryLowThrowStart
+  sentryOn
+  sentryThrowEnd
+  sentryThrowStart
+  shieldBeep
+  shieldCharge
+  shieldDeflect
+  shieldDischarge
+  shieldHit
+  shieldLoop
+  shoot
+  shopJingle
+  shopJingle1
+  shopJingle2
+  shopJingle3
+  showLog
+  shroomAngry
+  shroomConfused
+  shroomDie
+  shroomHurt
+  shroomImpressed
+  shroomLaugh
+  shroomSing
+  shroomSleep
+  shroomTalk
+  shroomTaunt
+  shroomThrowEnd
+  shroomThrowStart
+  shroomattack
+  silencedLaserShotHit
+  silencedLaserShotHit_lithium
+  slideCeramic
+  slideIce
+  slideIndoors
+  slideMetal
+  slideSnow
+  slideStone
+  slideWood
+  slotJackpot
+  slotSnap
+  slotStart
+  slotTick
+  slowed
+  sluggerGunShoot
+  sluggerHit
+  sluggerHitSilenced
+  sluggerPipeShoot
+  sluggerPistolShoot
+  sluggerRevolverShoot
+  sluggerRevolverShoot_mod
+  sluggerShotgunShoot
+  sluggerSubShoot
+  snow
+  spawn
+  spawnCrate
+  spawnIllusion
+  spawnObject
+  spawnPlug
+  spawnSpark
+  sphereGrenadeBeep
+  spikeAttack
+  spikeHit
+  spikeHitSilenced
+  spikebirdDeath
+  spikebirdDestroy
+  spikebirdHit
+  spikebirdOuch
+  spikebirdTalk
+  springJump
+  springLand
+  static
+  staticRadioLoop
+  staticRadioLoop2
+  stealthCombo
+  stealthComboEnd
+  stealthComboEndStep
+  steam
+  stepDirt
+  stepDry
+  stepDryLighter
+  stepGirder
+  stepIce
+  stepIndoor
+  stepIndoorSoft
+  stepMetal
+  stepMetalDark
+  stepSand
+  stepSnow
+  stepStone
+  stepStoneDark
+  stoneBreak
+  story_talk
+  sweat
+  sweat_talk
+  switch
+  teslaCharge
+  theft
+  thunder
+  tickingClock
+  timeCounter
+  tinySpark
+  trunkanDie
+  trunkanHit
+  trunkanMumble
+  trunkanOuch
+  trunkanSigh
+  trunkanTalkArrogant
+  trunkanTalkConfused
+  trunkanTalkFlossing
+  trunkanTalkWobble
+  trunkanThrowEnd
+  trunkanThrowStart
+  unlocked
+  vialHit
+  virusEnd
+  virusStart
+  volCheck
+  walkerAttack
+  walkerDie
+  walkerJump
+  walkerLand
+  walkerStep
+  waspAttack
+  waspDeath
+  waspHit
+  waveAttackSpawn
+  waveAttackStart
+  waveEnd
+  waveStart
+  wind
+  wispBolt
+  wispMove
+  wispStop
+  zapperHit
+
+
+MODIFIERS:
+  allBlueprints
+  allCiphers
+  allEncyclopedia
+  allReports
+  autoPickLocks
+  autoUnlockStory
+  dropBestWeapon
+  infiniteAmmo
+  infiniteLives
+  infiniteThrowables
+  instantShieldCharge
+  invulnerable
+  lowGravity
+  maxOneThrowableDrop
+  noAttack
+  noDrops
+  noEmergency
+  noLoot
+  noThrowableDrops
+
+
+OBJECTS:
+  amanitaBorealisHelmet
+  amanitaBorealisMask
+  amanitaCamoHelmet
+  amanitaDesertClothFace
+  amanitaDesertClothHat
+  amanitaEmpireHelmet
+  amanitaEmpireMask
+  amanitaHarness
+  amanitaScienceHat
+  amanitaScienceMask
+  ammoLarge
+  ammoLargeDouble
+  ammoMedium
+  ammoMediumDouble
+  ammoSmall
+  ammoSmallDouble
+  anomalyMarker
+  artifact
+  artifactApple
+  artifactCandlestick
+  artifactDisc
+  artifactKing
+  artifactNes
+  artifactVirtualBoy
+  backShell
+  barbedClub
+  barbedShield
+  basicShield
+  beamAmmo
+  beamGun
+  beamGunChargeCell
+  beamGunExtendedMagazine
+  beamGunPowerCrystal
+  beamRay
+  beamRayWarning
+  birdEgg
+  bite
+  blaster
+  blasterAmmo
+  blasterGun
+  blasterGunEnergyDish
+  blasterGunMagazine
+  boltIron
+  boneClub
+  boomHelmet
+  boomerang
+  borealisShield
+  bounty
+  brain
+  brainRevive
+  bubble
+  burnerFlame
+  burnerFlameSmall
+  camouflage
+  capacitorBig
+  capacitorSmall
+  catBandana
+  catGlasses
+  catHunterHat
+  catRimmedHat
+  catSteelGuard
+  catSteelHat
+  chandelierCord
+  chemical
+  chemicalShooter
+  chronoAmmo
+  chronoBomb
+  chronoBullet
+  chronoRod
+  chronoShifter
+  chronoShifterMagazine
+  chronoShifterPower
+  chronoShifterScope
+  circuitBig
+  circuitSmall
+  cord
+  cordB
+  cpuRegina2000
+  cpuRegina4000
+  crate
+  crateConsumable
+  crateUpgrade
+  crateUpgradeHull
+  crowbar
+  cyborgChronoFeetHull
+  cyborgChronoHandsHull
+  cyborgChronoHeadHull
+  cyborgChronoTorsoHull
+  cyborgDefenderFeetHull
+  cyborgDefenderHandsHull
+  cyborgDefenderHeadHull
+  cyborgDefenderTorsoHull
+  cyborgExplorerFeetHull
+  cyborgExplorerHandsHull
+  cyborgExplorerHeadHull
+  cyborgExplorerTorsoHull
+  cyborgScouterFeetHull
+  cyborgScouterHandsHull
+  cyborgScouterHeadHull
+  cyborgScouterTorsoHull
+  cyborgStealthFeetHull
+  cyborgStealthHandsHull
+  cyborgStealthHeadHull
+  cyborgStealthTorsoHull
+  dagger
+  danceBolt
+  dataCanister
+  deathMarker
+  debris
+  dematerialized
+  dematerializer
+  distressBeacon
+  distressBeaconPrime
+  drop
+  dynamite
+  dynamiteBackpack
+  dynamiteShard
+  egg2Big
+  egg2Small
+  eggBig
+  eggSmall
+  energy
+  energyBaton
+  energyCrate
+  energyShield
+  energyX10
+  energyX100
+  energyX1000
+  energyX50
+  energyX500
+  energyX5000
+  fanBig
+  fanSmall
+  fightingStick
+  fireCore
+  flashbang
+  flyHardShellExoHull
+  forceDevice
+  freshMeat
+  gammaDrop
+  goldBig
+  goldSmall
+  grab
+  grenade
+  grenadeAmmo
+  grenadeGun
+  grenadeGunMagazine
+  grenadeGunProximityFuse
+  groundAttachment
+  gyroBulletPiece
+  gyrojetAmmo
+  gyrojetGun
+  gyrojetGunExtendedBarrel
+  gyrojetGunMagazine
+  gyrojetbullet
+  hackBolt
+  hackDestruct
+  hackDevice
+  hackGrenade
+  hackGrenadeBolt
+  halbered
+  hammer
+  hardShield
+  helmet
+  helmetLow1
+  helmetLow2
+  helmetLow3
+  helmetLow5
+  homingLauncher
+  homingLauncherHomingDevice
+  homingLauncherMagazine
+  homingMissile
+  humanBorealisHelmet
+  humanBorealisMask
+  humanCamoHelmet
+  humanDesertClothFace
+  humanDesertClothHat
+  humanEmpireHelmet
+  humanEmpireMask
+  humanGlasses
+  humanGlovesArmy
+  humanGoggles
+  humanHarness
+  humanPantsCamo
+  humanPantsPlain
+  humanPantsSuit
+  humanPilots
+  humanRimmedHat
+  humanScienceHat
+  humanScienceMask
+  humanShirtCamo
+  humanShirtCoat
+  humanShirtPlain
+  humanShirtSash
+  humanShirtSuit
+  humanShoesArmy
+  humanShoesBoots
+  humanShoesDude
+  humanShoesFlops
+  humanShoesHeels
+  humanShoesLeather
+  implantChrono
+  implantChronoAlternator
+  implantChronoBoost
+  implantCloak
+  implantCrate
+  implantDeflect
+  implantHarden
+  implantShield
+  implantStun
+  inductorBig
+  inductorSmall
+  jadeBig
+  jadeSmall
+  jetEngine
+  jetFuel
+  jetShoes
+  jetshoeBullet
+  jetshoeFlame
+  joltSpider
+  jungleCord
+  klonk
+  laser
+  laserFat
+  laserHeavy
+  laserLong
+  laserMedium
+  laserMine
+  laserSniper
+  laserThin
+  launcherMini
+  launcherMiniHomingDevice
+  launcherMiniMagazine
+  launcherRocket
+  launcherRocketMagazine
+  launcherRocketScope
+  launcherShrapnel
+  launcherShrapnelMagazine
+  launcherShrapnelProximity
+  launcherThermal
+  launcherThermalHomingDevice
+  lavaBall
+  leafBig
+  leafSmall
+  lightEnhancer
+  liveEgg
+  logicChipBig
+  logicChipSmall
+  machete
+  mallet
+  materializerGun
+  matterAmmo
+  matterBlaster
+  matterBlasterScope
+  matterBolt
+  matterBoltMagazine
+  matterBoltScope
+  matterBoltSilencer
+  matterCannon
+  matterCannonSupport
+  matterGun
+  matterGunMagazine
+  matterGunPointer
+  matterGunScope
+  matterGunSilencer
+  matterMachine
+  matterMachineMagazine
+  matterMachinePointer
+  matterMachineScope
+  matterPistol
+  matterPistolBarrelMod
+  matterRifle
+  matterRifleMagazine
+  matterRiflePointer
+  matterRifleScope
+  matterWar
+  matterWarBarrel
+  matterWarMagazine
+  matterWarScope
+  matterWarSupport
+  megaBomb
+  megaBombExtendedTimer
+  megaShard
+  memoryChipBig
+  memoryChipSmall
+  metalRod
+  metalShield
+  miniSpark
+  missileAmmo
+  missileLong
+  missileMini
+  missileShrapnel
+  missileThermal
+  molotov
+  molotovCore
+  moveChrono
+  moveCloak
+  moveDash
+  moveDeflect
+  moveHarden
+  moveReflect
+  moveStun
+  mushroom2Big
+  mushroom2Small
+  mushroomBig
+  mushroomSmall
+  mycelishroom
+  nanoAmmo
+  nanoDispenser
+  nanoPump
+  nanoPumpBarrel
+  nanoPumpMagazine
+  nest
+  nitrogenGrenade
+  nut
+  opalBig
+  opalSmall
+  paddle
+  peck
+  phaserBullet
+  phaserGun
+  phaserGunRange
+  phaserGunSuperCharger
+  pickaxe
+  piston
+  pitchfork
+  plantClub
+  plasma
+  plasmaAccelerator
+  plasmaAcceleratorBooster
+  plasmaAcceleratorScope
+  plasmaAmmo
+  plasmaAssault
+  plasmaAssaultBooster
+  plasmaAssaultScope
+  plasmaCannon
+  plasmaCannonBooster
+  plasmaCannonCooler
+  plasmaCannonSpinner
+  plasmaGun
+  plasmaGunBooster
+  plasmaGunCooler
+  plasmaGunSpinner
+  plasmaPistol
+  plasmaPistolBooster
+  plasmaPistolSpinner
+  plasmaStriker
+  plasmaStrikerBooster
+  plasmaStrikerCooler
+  plateLow1
+  plateLow3
+  plateLow5
+  playerSpark
+  poolQue
+  portableBouncer
+  portableSentry
+  powerSlice
+  prism
+  prismConverter
+  punch
+  radio
+  railAmmo
+  railBurst
+  railBurstBig
+  railBurstBigExtendedMagazine
+  railBurstBigWheel
+  railBurstExtendedMagazine
+  railBurstWheel
+  railCannon
+  railCannonPointer
+  railCannonScope
+  railGun
+  railGunPointer
+  railGunScope
+  railPrototype
+  railRevolver
+  railRevolverEngine
+  railRevolverLoadPin
+  railRifle
+  railRifleEngine
+  railRifleLoadPin
+  railScout
+  railScoutPointer
+  railScoutScope
+  railVanquisher
+  railVanquisherEngine
+  railVanquisherExtendedMagazine
+  rapier
+  reactionEnhancer
+  reactorAdvanced
+  reactorBasic
+  reflectShield
+  respawnCell
+  rigDebris
+  rock
+  rubyBig
+  rubySmall
+  sai
+  sapphireBig
+  sapphireSmall
+  sawbladeBat
+  scimitar
+  scrapShield
+  selfDestruct
+  sentryBackpack
+  sentryCamo
+  sentryFlower
+  sentrySkull
+  sentrySlime
+  sentryStripe
+  sentryTiger
+  servoBig
+  servoSmall
+  sgGuardLaser
+  sgHeroLaser
+  shell
+  shieldBattery
+  shieldBelt
+  shieldBeltCapacity
+  shieldDurability
+  shieldEffect
+  shovel
+  shrapnel
+  silencedLaser
+  silencedLaserSniper
+  silentshrapnel
+  slothGrip
+  slug
+  slugBig
+  slugMedium
+  slugSmall
+  sluggerAmmo
+  sluggerGun
+  sluggerGunMagazine
+  sluggerPipe
+  sluggerPipeReinforcedBarrel
+  sluggerPipeScope
+  sluggerRevolver
+  sluggerRevolverExtendedBarrel
+  sluggerRevolverLoadPin
+  sluggerRevolverScope
+  sluggerSemi
+  sluggerSemiMagazine
+  sluggerSemiSilencer
+  sluggerShotgun
+  sluggerShotgunBarrel
+  sluggerShotgunTrigger
+  sluggerSub
+  sluggerSubMagazine
+  sluggerSubSilencer
+  spear
+  sphereGrenade
+  spike
+  spikeAmmo
+  spikeBowRepeater
+  spikeBowScope
+  spikeBullet
+  spikeCrossbow
+  spikeShooter
+  spikebirdClub
+  spikedBat
+  spikedMine
+  starGuardGuardBullet
+  stick
+  stunShield
+  superPlug
+  teamSpark
+  throwGrenade
+  tileDebris
+  transistorBig
+  transistorSmall
+  triPlug
+  trunkanBullet
+  trunkanBulletSilenced
+  vial
+  vialRad
+  vikingSword
+  waspHardShellExoHull
+  woodenBat
+  woodenPaddle
+  woodenShield
+  wrench
+
+
+ACTORS:
+  airBomb
+  alarmCamera
+  alarmLaser
+  alarmMic
+  amanita
+  bird
+  boom
+  botGuard
+  brain
+  etacGhost
+  fly
+  flyRobot
+  hamster
+  human
+  jetbike
+  manet
+  metaldroid
+  metalface
+  newBlueface
+  ninja
+  portableSentry
+  predator
+  protobot
+  sentry
+  sentryLow1
+  sentryLow2
+  sentryLow3
+  sentryLow4
+  sentryLow5
+  sgGuard
+  sgMonster
+  shroom
+  shroomCat
+  skullfish
+  spikebird
+  springbot
+  trunkan
+  trunkan1
+  virusGhost
+  walker
+  wasp
+  willOWisp
+
+
+INVENTORIES:
+  airBomb
+  amanita
+  backpack
+  bird
+  blueface
+  boom
+  brain
+  carSentry
+  catapultSentry
+  default
+  device
+  fly
+  ghost
+  hamster
+  human
+  jetbike
+  jetbike_aim
+  manet
+  mech
+  mech_aim
+  metalface
+  metalface_aim
+  mountedSentry
+  ninja
+  relay
+  robot
+  sentry
+  shroom
+  shroomCat
+  skullfish
+  smallRobot
+  spikeBird
+  springSentry
+  springbot
+  starGuard
+  tripodSentry
+  trunkan
+  walker
+  walker_aim
+  wasp
+
+
+
+
+
+MOD EXAMPLE:
+init.lua:
+
+local actor = {
+	arcade = true,
+	defaultLevel = 1,
+	actorType = "metalface",
+	{
+		cost = 100,
+		items = {
+			"slothGrip",
+			"reactionEnhancer",
+			--
+			"cyborgScouterFeetHull",
+			"cyborgScouterHandsHull",
+			"cyborgScouterHeadHull",
+			"cyborgScouterTorsoHull",
+			--
+			"matterWar",
+			"fightingStick",
+			"freshMeat",
+			--
+			"ammoLarge",
+			"ammoLarge",
+		},
+	},
+}
+
+actor_classes.add("super_actor", actor)
