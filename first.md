@@ -13,7 +13,7 @@ if there nothing on the screen do
 file -> new (ctrl+n)
 
 type in something for name/description/author and select a type if you want  
-set load_group to Modification - middle
+set load_group to `Modification - middle`
 
 > setting up the mod in the mod editor  
 ![](https://i.imgur.com/AAVb3xM.jpg)
