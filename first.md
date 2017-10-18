@@ -103,7 +103,9 @@ ______________________________________________________
 
 if your mod is ever so broken that you can't disable through the in game options, you can disable your mod through this config file
 
-`C:\Users\Familie\AppData\Roaming\Cobalt WASD\mods.sfg`
+`C:\Users\USER_NAME\AppData\Roaming\Cobalt\mods.cfg` (pre-beta)
+`C:\Users\USER_NAME\AppData\Roaming\Cobalt\mods.sfg`
+`C:\Users\USER_NAME\AppData\Roaming\Cobalt WASD\mods.sfg`
 
 (in the line `["1234567890_your_mod_id"] = true` change `true` to `false`)
 
