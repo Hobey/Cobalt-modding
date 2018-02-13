@@ -84,8 +84,24 @@ ______________________________________________________
 pre-beta cobalt modding  
 https://docs.google.com/document/d/1M90Lt0TVeBHJE1VTi-oVaFHplhid2eQek_YVohXNiiU
 
-current modding api documetation (not up to date!)  
-https://pastebin.com/d22p4fPz
+current modding api documetation (by thewreck, copy-paste from the pins in the cobalt discord #modding)
+
+thewreck: 
+    COBALT MOD API REFERENCE DOCUMENTS
+    REFERENCE: https://pastebin.com/d22p4fPz
+    Actors: https://pastebin.com/Jv1zz1wC
+    Explosions: https://pastebin.com/S7JzU2GG
+    Inventories: https://pastebin.com/eTemWLw7
+    Item Slots: https://pastebin.com/LLD04UTU
+    Items: https://pastebin.com/kbLvwTBn
+    Modifiers: https://pastebin.com/pLkvWNHe
+    Objects: https://pastebin.com/5M8DA0J3
+    Sounds: https://pastebin.com/bQGZwRnP
+    Attacks: https://pastebin.com/BuU6wPtj
+    Movements: https://pastebin.com/y4Hd6cKX
+    Game Modes: https://pastebin.com/pT7P5Z2m
+    Game Mode Prefixes: https://pastebin.com/j2Rj4jMU
+    Guide Layouts: https://pastebin.com/JbP1Hr8B(edited)
 
 lua tutorial  
 https://learnxinyminutes.com/docs/lua/  
